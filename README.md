@@ -8,6 +8,9 @@
   <i>Open Source Edition</i>
 </p>
 
+**Need Any More Help?**
+DM @alisdairr. on Discord.
+
 ---
 
 ### ⚠️ Important
