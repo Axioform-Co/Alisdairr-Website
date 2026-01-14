@@ -2,10 +2,10 @@
   <img src="https://user-images.githubusercontent.com/00000000/000000000-banner.png" width="100%" />
 </p>
 
-<h1 align="center">Project Title</h1>
+<h1 align="center">Alisdairr WebPage Design</h1>
 
 <p align="center">
-  <i>Short one-line description goes here</i>
+  <i>Open Source Edition</i>
 </p>
 
 ---
