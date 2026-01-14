@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+#visualizer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: none;
+}
+
+.enter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.enter.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.enter h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+.enter button {
+    padding: 15px 45px;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 3px;
+}
+
+.enter button:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background: rgba(18, 18, 18, 0.9);
+    border: 1px solid #333;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pfp {
+    position: absolute;
+    bottom: -35px;
+    left: 16px;
+}
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid rgba(18, 18, 18, 0.9);
+    background: #222;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid rgba(18, 18, 18, 0.9);
+    background: #666;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.dot.online { background: #23a559; }
+.dot.idle { background: #f0b232; }
+.dot.dnd { background: #f23f43; }
+.dot.offline { background: #666; }
+
+.info {
+    padding: 50px 18px 20px 18px;
+}
+
+.loading {
+    text-align: center;
+    padding: 30px 0;
+    color: #aaa;
+}
+
+.spinner {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #333;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.handle {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.about, .joined {
+    padding-top: 16px;
+    border-top: 1px solid #2a2a2a;
+    margin-top: 16px;
+}
+
+h3 {
+    color: #aaa;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.status-box {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.emoji {
+    font-size: 18px;
+}
+
+.joined p {
+    color: #ddd;
+    font-size: 13px;
+}
+
+.links {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
