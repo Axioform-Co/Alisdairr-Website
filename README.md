@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.discordapp.com/avatars/262158823433830402/bdac9fc707211ad7c19a1cd0228e320f.png?size=1024" width="5%" />
+  <img src="https://cdn.discordapp.com/avatars/262158823433830402/bdac9fc707211ad7c19a1cd0228e320f.png?size=1024" width="5%" style="border-radius: 50%;" />
 </p>
 
 <h1 align="center">Alisdairr WebPage Design</h1>
