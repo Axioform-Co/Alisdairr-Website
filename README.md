@@ -32,11 +32,6 @@ DM @alisdairr. on Discord.
 
 Everything that needs editing is clearly commented, so you won’t have to hunt around.
 
-Just search for:
+Just click Ctrl + F and search for:
 ```js
-// const userId = '262158823433830402'; {script.js}
-// <h1>alisdairr</h1> {index.html}
-// <div class="banner" id="banner" style="background-image: url('your discord banner url');"> {index.html}
-// <a href="https://github.com/alisdairr" target="_blank" class="btn"> {index.html}
-// <p>dec 24, 2016</p>
-// <div class="skill"> (Many Things you can change here, just look carefully)
+// "Change This!"
