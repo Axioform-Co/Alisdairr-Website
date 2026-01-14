@@ -3,9 +3,9 @@ const userId = '262158823433830402';
 
 // Change This! add your mp3 files here
 const songs = [
-    'videoplayback.mp3',
-    '3m.mp3',
-    'yourinsecure.mp3',
+    'Audio/videoplayback.mp3',
+    'Audio/3m.mp3',
+    'Audio/yourinsecure.mp3',
 ];
 
 // click enter to start
